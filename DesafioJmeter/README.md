@@ -30,7 +30,7 @@ Com o projeto já aberto basta apenas clicar no plano de teste e depois na prime
 Caso haja necessidade de rodar o projeto é necessário clicar no botão "Salvar dados da tabela" nas páginas "Relatório agregado" e "Relatório de sumário" e quanto aos resultados em tabela ele é gerado automaticamente quando roda o teste.
 OBS: Surgirá um pop-up e pedindo para acrescentar ao documento existente ou sobrescrever o arquivo já existente e caso queira gerar um novo é só trocar o caminho de saída.
 
-## Desafio- Planejamento de JMeter
+## Desafio- Teste de Carga com JMeter
 
 Descrição da demanda: 
 Foi verificado a necessidade de realizar testes na api no site accor-fab.herokuapp.com/swagger para que possa verificar a integridade da api como a sua resposta de requisição, degradação de respostas e numero de requests.
@@ -64,6 +64,7 @@ OBS: Na avaliação dos responses também foi possivel verificar que mesmo coloc
 <div align-center>
   <img  src="https://user-images.githubusercontent.com/105563616/212572310-d96230fc-5da7-4de2-b34e-50b48f7c1d0e.png"  width=700 />
 </div>
+<span></span>
 
 O relatório **"Ver Resultados em Tabela"** podemos verificar o tempo das amostras individualmente de cada requisição, ao executar a carga, o número de amostragem a partir de 844(ms) alguns POST começaram apresentar erro 500, lembrando que os usuários obteve erro no POST consequentemente obteve erro no PATCH.
 
