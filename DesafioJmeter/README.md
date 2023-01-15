@@ -62,7 +62,7 @@ Ao conferir o PATCH foi notado que o erro Not Allowed foi devido ao erro 500 do 
 OBS: Na avaliação dos responses também foi possivel verificar que mesmo colocando os dados corretamente no PATCH ele retorna id=0, "null" nos valores firstName e lastName e no valor email "vcxvcxcxv@vccx.com".
 
 <div align-center>
-  <img  src="https://user-images.githubusercontent.com/105563616/212572310-d96230fc-5da7-4de2-b34e-50b48f7c1d0e.png"  width=150 />
+  <img  src="https://user-images.githubusercontent.com/105563616/212572310-d96230fc-5da7-4de2-b34e-50b48f7c1d0e.png"  width=500 />
 </div>
 
 
