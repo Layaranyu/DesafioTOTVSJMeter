@@ -65,15 +65,25 @@ OBS: Na avaliação dos responses também foi possivel verificar que mesmo coloc
   <img  src="https://user-images.githubusercontent.com/105563616/212572310-d96230fc-5da7-4de2-b34e-50b48f7c1d0e.png"  width=700 />
 </div>
 
-
-
-
 O relatório **"Ver Resultados em Tabela"** podemos verificar o tempo das amostras individualmente de cada requisição, ao executar a carga, o número de amostragem a partir de 844(ms) alguns POST começaram apresentar erro 500, lembrando que os usuários obteve erro no POST consequentemente obteve erro no PATCH.
+
+<div align-center>
+  <img  src="https://user-images.githubusercontent.com/105563616/212572834-e539267a-a454-4d57-9b0c-165be4e58990.png" width=700 />
+</div>
 
 No **"relatório de Sumário"** podemos verificar o tempo mínimo POST(800 ms) e o máximo POST(1976 ms) com a porcentagem de erro de 23% e vazão de 204,0/sec,e ao comparar com o GET sabendo que para um cenário otimista o ideal seria uma vazão grande com o tempo de resposta baixo e não é isso que acontece com o GET e ainda assim ele performa melhor que POST. Como apresentado no relatório anterior o POST passa apresentar erro a partir 844(ms), sendo que ele inicia já com 800(ms) como o tempo de amostragem mais baixo. Nas primeiras requisições ele já começa apresentar a instabilidade em algumas requisições e começando a falhar.
 OBS: Quanto aos dados do PATCH nenhum dos erros apresentados foram referentes a carga no endpoints, seus erros foram ocasionados devido ao fluxo de teste de quando um POST falha um PATCH também falha.Sendo assim, a % de erro apresentada do endpoints não corresponde a carga que foi direcionada ao endpoints de PATCH.
 
+<div align-center>
+  <img  src="https://user-images.githubusercontent.com/105563616/212573029-8435a8c3-10dc-4b7c-8a0b-61811e01dcc4.png" width=700 />
+</div>
+
 No **"relatório Agregado"** podemos verificar a faixa de usuário(percentil) de 99% line tiveram um tempo de resposta entre 800(ms) e 1527(ms), considerando que entre 100(ms) e 1000(ms) um tempo bom de tempo de resposta e de 1000(ms) a 10000(ms) que onde se encaixa o POST já é considerado problemático, notando também que o GET também se encaixa no último caso citado e o PATCH estando no melhor cenário. A média da porcentagem de erro foi de 15,33%, mas podemos considerar metade levando em consideração que os problemas causados no PATCH foram derivados do POST. 
+
+<div align-center>
+  <img  src="https://user-images.githubusercontent.com/105563616/212573190-d8b1ab51-f1ff-4886-a0d7-d80cf7be1895.png" width=700 />
+</div>
+
 
 ## Conclusão
 POST demonstrou ser a requisição mais frágil em relação ao teste de carga apresentando erro 500 quando está estressada, já o GET apesar de não apresentar erro 500 demonstrou ter uma lentidão muito grande nas requisições e o PATCH tendo a melhor performance, ignorando o erro do POST.
