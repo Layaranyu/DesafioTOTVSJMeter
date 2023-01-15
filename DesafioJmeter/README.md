@@ -51,8 +51,9 @@ IV-Para obter as respostas do teste de carga foi utilizado os seguintes ouvintes
 3. Relatório de Sumário: Neste é possível verificar o tempo médio, máximo e mínimo, vazão(Throughput) e porcentagem de erro.
 4. Relatório Agregado: É possível verificar o tempo médio,máximo e mínimo, faixa de usuário 90%, 95% e 99%, vazão(Throughput) e porcentagem de erro.
 
-
+<div style=text-align:center>
 ## Resultados
+</div>
 Através do relatório "Ver Árvore de Resultados" podemos verificar informações de cada requisição e suas respostas(responses), e ao analisar os dados do teste já foi possível ver algumas falhas nas requisições sendo elas: 
 POST: Erro 500 - Internal Server Error 
 PATCH: Erro 405- Method Not Allowed
