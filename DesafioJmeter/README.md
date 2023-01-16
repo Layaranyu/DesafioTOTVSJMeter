@@ -4,7 +4,7 @@ o [JMeter](https://jmeter.apache.org/) é um software de código aberto, um apli
 ###### Configuração NECESSÁRIA ######
 
 ## Apache JMeter
-Para instalar o Apache JMeter será necessario baixar o instalador acessando o site oficial [nesse link](https://jmeter.apache.org/) no lado direito a opção "Download Releases".
+Para instalar o Apache JMeter será necessario baixar o instalador acessando o site oficial [nesse link](https://jmeter.apache.org/), no lado direito clique na opção "Download Releases".
 1. Escolha a opção que deseja podendo ser Source ou Binaries.
 2. Selecione os arquivos .zip e extensões tgz.
 3. Clique em extrair arquivo.
